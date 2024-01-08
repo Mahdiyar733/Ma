@@ -16,12 +16,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="handStyle.css" />
+    <script src="./script.js" defer></script>
     <title>Manshour Agancy</title>
   </head>
   <body class="bg-abiDark">
     <header
-      class="w-full h-8 flex items-center justify-between mt-3 px-5 sm:mb-9"
+      class="w-full h-8 flex items-center justify-between mt-3 px-5 sm:mb-9 relative"
     >
+      <div id="hamberMenu" class="hidden"></div>
       <h1 class="font-josefin font-bold text-xl text-sefid">Manshour</h1>
       <div class="w-full h-full px-14 hidden sm:block">
         <ul
@@ -54,7 +57,10 @@
       >
         Order
       </button>
-      <div class="h-[18px] flex justify-between flex-col sm:hidden">
+      <div
+        class="h-[18px] flex justify-between flex-col sm:hidden"
+        onclick="hamberMenuFnc()"
+      >
         <span class="w-[3px] h-[3px] bg-sefid rounded-full"></span>
         <span class="w-[3px] h-[3px] bg-sefid rounded-full"></span>
         <span class="w-[3px] h-[3px] bg-sefid rounded-full"></span>
@@ -518,7 +524,7 @@
         </div>
       </div>
     </div>
-    <div class="mt-12 px-8 w-full">
+    <div class="mt-16 mb-12 px-8 w-full">
       <div class="bg-[#232527] rounded-md rounded-bl-[2rem] pt-5">
         <h3
           class="text-sefid text-xl block text-center font-DmSans font-semibold mb-6"
@@ -561,6 +567,21 @@
             ></button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center justify-center mx-8">
+      <h3 class="font-DmSans text-3xl font-normal text-sefid sm:text-2xl">
+        FAQs
+      </h3>
+      <div class="flex flex-row w-full items-center justify-between">
+        <p class="font-DmSans text-sefid text-sm">
+          01.Can i develop my website without code ?
+        </p>
+        <button
+          class="w-7 h-7 rounded-full bg-abilight font-bold text-sefid flex justify-center items-center"
+        >
+          <p>+</p>
+        </button>
       </div>
     </div>
   </body>
